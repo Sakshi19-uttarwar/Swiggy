@@ -210,131 +210,210 @@ body{
     align-items: center;
     justify-content: center;
 }
-.restaurants{
+
+
+.food-option-heading{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 120px ;
-    padding-left: 160px;
-    padding-right: 160px;
+    margin: 0 150px;
 }
-.restaurants-right h2{
-    font-weight: bold;
-    font-size: 24px;
-}
-.restaurants-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.restaurants-left .fa-arrow-right{
-    background-color: rgb(200, 199, 199);
-    height: 40px;
+
+.arrow-wrapper .fa-arrow-left{
+    background-color: rgb(198, 192, 192);
+   
     width: 40px;
-    color: black;
-    border-radius: 20px;
     
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.restaurants-left .fa-arrow-left{
-    background-color: rgb(143, 142, 142);
     height: 40px;
-    width: 40px;
-    color: black;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.restaurant-1{
-    border: none;
-    border-radius: 10px solid rgb(172, 26, 26);
+
+.arrow-wrapper .fa-arrow-right{
+    background-color: rgb(139, 135, 135);
+   
+    width: 40px;
+    
+    height: 40px;
+    border-radius: 20px;
 }
-.kitchen-1{
-    position: absolute;
-    height: 150px;
-    width: 300px;
-    background-size: cover;
-    background-position: center ;
-    background-image: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/6/7/efba0106-86c3-485a-a60f-c1ef5051133a_20240607T103142548.jpg);
-    border-radius: 16px 16px 0px 0px;
-    color: rgb(83, 81, 81);
-    font-weight:500;
-    line-height: 22px;
-    margin-left: 160px;
+.restaurant-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  overflow-x: scroll;
+  margin: 40px ;
+  margin-left: 150px;
+  margin-right: 150px;
 }
-.dine-1{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 120px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    padding-left: 8px ;
+
+.restaurant-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.rest-card{
+    width: 340px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid rgb(231,231,231);
+    flex-shrink: 0;
+    overflow: hidden;
+    color: rgba(2,6,12,0.6);
+   
     
 }
 
-.line-1-right{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    padding-left: 8px ;
-    margin-top: 10px;
+.rest-card-box {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.location-1-right{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    padding-left: 8px ;
+
+
+.img {
+  width: 340px;
+  height: 200px;
+  background-image: url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/9/25/d9cabbe8-13f0-4581-809a-455776bb5d8a_image4487a6c993754471f99c03ffac3103512.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
 }
-.booking{
-    background-color: rgb(232, 223, 223);
-    border: none;
-    border-radius: 20px;
-    width: 150px;
-    font-size: 14px;
-    padding-left: 8px ;
-}
-.kitchen-1 button{
-    width: 300px;
-    height: 50px;
-}
-.button-1 {
-   background-color: rgb(2, 134, 2);
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
+.img1 {
+  width: 340px;
+  height: 200px;
+  background-image: url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/6/7/efba0106-86c3-485a-a60f-c1ef5051133a_20240607T103142548.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -0.5px;
   
 }
-.button-1 p{
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
+.img2 {
+  width: 340px;
+  height: 200px;
+  background-image: url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/6/7/feb768f3-4a9a-4069-9395-2062e5d909e6_20240607T103222320.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -0.5px;
 }
-.button-1 button{
-    background-color: rgb(2, 134, 2);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
+.img3 {
+  width: 340px;
+  height: 200px;
+  background-image: url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/11/23/40fc710c-269f-4c0d-b4fd-2ad5fec0613e_image828e9bf17728a495da0ba8a10f32c33dd.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+ font-weight: 800;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -0.5px;
+}
+.img4 {
+  width: 340px;
+  height: 200px;
+  background-image: url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/6/7/a1e0cbfd-d551-419b-ba4b-c1e6a17d6d08_20240607T103047459.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -0.5px;
+}
+.img5 {
+  width: 340px;
+  height: 200px;
+  background-image: url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2025/4/24/34a3db2c-ac73-47ab-8033-d452f9406d22_image9e8567951d9774c56a692e0d73b609db4.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+ font-weight: 800;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -0.5px;
+}
+.img6 {
+  width: 340px;
+  height: 200px;
+  background-image: url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/11/29/abe6219a-67b7-4660-80f5-8ad37357d8a2_image189eb28611f11840efbe36cdcdd0cc9b6e.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -0.5px;
+}
+/* 
+.rest-card img {
+  width: 340px;
+} */
+
+.rest-card-box-1,
+.rest-card-box-2 {
+  display: flex;
+  justify-content: space-between;
 }
 
-.button-2{
-    background-color: rgb(133, 241, 133);
-    border: none;
-    border-radius: 10px;
-    color: rgb(24, 162, 38);
-    font-weight: bold;
-    font-size: 14px;
+.rest-card-booking {
+  background-color: rgb(232, 232, 232);
+  width: max-content;
+  border-radius: 12px;
+  padding: 2px 8px;
 }
+
+.rest-card-box-3 {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(27, 166, 114);
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.rest-card-bank-offers {
+  background-color: #c8f9e5;
+  color: rgb(27, 166, 114);
+  padding: 8px;
+  border-radius: 8px;
+
+  /* margin-bottom: 10px; */
+}
+
+
 
 
 
@@ -479,6 +558,7 @@ body{
     height: 30px;
     width: 100px;
 }
+
 .end{
    background-color: rgb(240, 240, 245);
    height: 140px;
